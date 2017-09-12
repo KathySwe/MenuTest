@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.DrawerActivity">
+    <item android:id="@+id/language_settings"
+        android:orderInCategory="100"
+        android:title="ဘာသာစကား"
+        android:icon="@drawable/language"
+        android:showAsAction="never">
+        <menu>
+            <item
+        android:id="@+id/english"
+        android:orderInCategory="100"
+        android:title="English"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/myanmar"
+        android:orderInCategory="100"
+        android:title="မြန်မာ"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/zawgyi"
+        android:orderInCategory="100"
+        android:title="ဇော်ဂျီ"
+        app:showAsAction="never" />
+        </menu>
+    </item>
+ <!--   <item
+        android:id="@+id/english"
+        android:orderInCategory="100"
+        android:title="English"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/myanmar"
+        android:orderInCategory="100"
+        android:title="မြန်မာ"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/zawgyi"
+        android:orderInCategory="100"
+        android:title="ဇော်ဂျီ"
+        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/application_setting"
+        app:showAsAction="never" >
+        <menu>
+            <item
+                android:id="@+id/action_logout"
+                android:orderInCategory="100"
+                android:title="အကောင့်ထွက်မည်"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_version"
+                android:orderInCategory="100"
+                android:title="Version 3.0.9"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+     <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="ထွက်မည်"
+         android:icon="@drawable/exit"
+        app:showAsAction="never"/>
+
+    <!--<item
+        android:id="@+id/action_search"
+        android:title="Search"
+        app:showAsAction="always"
+        android:visible="false"
+        app:actionLayout="@layout/search_menu_layout">
+    </item>-->
+    <!--<item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/icon_search"
+        app:showAsAction="collapseActionView|always"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"/>-->
+
+
+    <item
+        android:id="@+id/action_messenger"
+        android:title="Messenger"
+        android:icon="@drawable/icon_messenger"
+        android:visible= "false"
+        app:showAsAction="always" />
+  <!--  <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/ph_call"
+        android:actionLayout="@layout/noti_layout"
+        android:title="Phone Call"
+        app:showAsAction="always"/>-->
+     <!--<item
+         android:id="@+id/action_notifications"
+          android:icon="@drawable/message_icon"
+          android:actionLayout="@layout/noti_layout"
+         android:title="Notifications"
+         app:showAsAction="always" />
+    <item
+        android:id="@+id/action_price"
+        android:icon="@drawable/price_tag"
+        android:actionLayout="@layout/noti_layout"
+        android:title="Prices"
+        app:showAsAction="always" />-->
+</menu>
